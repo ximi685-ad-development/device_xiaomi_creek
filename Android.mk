@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sapphire)
+ifeq ($(TARGET_DEVICE),creek)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

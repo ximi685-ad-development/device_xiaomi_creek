@@ -6,4 +6,4 @@ persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_location=1080|990|200|local:4630946711218184577
 
 # WLAN
-ro.hardware.wlan.chip=wcn3988
+ro.hardware.wlan.chip=wcn3950

@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiResSapphire",
-    device_specific: true
+    name: "FrameworksResCreek",
+    device_specific: true,
 }

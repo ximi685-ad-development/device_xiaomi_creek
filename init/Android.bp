@@ -4,10 +4,10 @@
 //
 
 cc_library_static {
-    name: "init_sapphire",
+    name: "init_creek",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_sapphire.cpp"],
+    srcs: ["init_creek.cpp"],
     include_dirs: [
         "system/core/init",
         "system/libbase/include"

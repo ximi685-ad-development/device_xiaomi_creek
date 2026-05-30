@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResSapphire",
-    device_specific: true,
+    name: "SettingsProviderResCreek",
+    device_specific: true
 }

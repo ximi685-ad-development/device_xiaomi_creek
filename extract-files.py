@@ -10,7 +10,7 @@ from extract_utils.main import (
 )
 
 module = ExtractUtilsModule(
-    'sapphire',
+    'creek',
     'xiaomi',
     check_elf=False,
 )

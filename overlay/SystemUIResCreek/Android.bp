@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResSapphire",
+    name: "SystemUIResCreek",
     device_specific: true,
 }

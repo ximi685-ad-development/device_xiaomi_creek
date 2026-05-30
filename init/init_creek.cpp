@@ -56,43 +56,43 @@ void property_override(string prop, string value)
         __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
 }
 
-void load_redmi_sapphire() {
-    property_override("bluetooth.device.default_name", "Redmi Note 13");
+void load_redmi_creek() {
+    property_override("bluetooth.device.default_name", "Redmi 15");
     property_override("ro.product.brand", "Redmi");
-    property_override("ro.product.device", "sapphire");
+    property_override("ro.product.device", "creek");
     property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.marketname", "Redmi Note 13");
-    property_override("ro.product.model", "23129RAA4G");
-    property_override("ro.product.mod_device", "sapphire_global");
-    property_override("ro.product.name", "sapphire_global");
-    property_override("vendor.usb.product_string", "Redmi Note 13");
+    property_override("ro.product.marketname", "Redmi 15");
+    property_override("ro.product.model", "25062RN2DA");
+    property_override("ro.product.mod_device", "creek_global");
+    property_override("ro.product.name", "creek_global");
+    property_override("vendor.usb.product_string", "Redmi 15");
 }
 
-void load_redmi_sapphiren() {
-    property_override("bluetooth.device.default_name", "Redmi Note 13 NFC");
+void load_poco_creek() {
+    property_override("bluetooth.device.default_name", "POCO M7");
     property_override("ro.product.brand", "Redmi");
-    property_override("ro.product.device", "sapphiren");
+    property_override("ro.product.device", "creek_p");
     property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.marketname", "Redmi Note 13 NFC");
-    property_override("ro.product.model", "23124RA7EO");
-    property_override("ro.product.mod_device", "sapphiren_global");
-    property_override("ro.product.name", "sapphiren_global");
-    property_override("vendor.usb.product_string", "Redmi Note 13 NFC");
+    property_override("ro.product.marketname", "POCO M7");
+    property_override("ro.product.model", "25062PC34G");
+    property_override("ro.product.mod_device", "creek_p_global");
+    property_override("ro.product.name", "creekn_global");
+    property_override("vendor.usb.product_string", "POCO M7");
 }
 
 void vendor_load_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
     if (access("/system/bin/recovery", F_OK) != 0) {
-    if (hwname == "sapphire") {
-        load_redmi_sapphire();
-    } else if (hwname == "sapphiren") {
-        load_redmi_sapphiren();
+    if (hwname == "creek") {
+        load_redmi_creek();
+    } else if (hwname == "creek_p") {
+        load_poco_creek();
        }
     }
 
     // Override first api level for safetynet
     if (!IsRecoveryMode()) {
-        property_override("ro.product.first_api_level", "32");
+        property_override("ro.product.first_api_level", "33");
     }
 
     // Set hardware revision

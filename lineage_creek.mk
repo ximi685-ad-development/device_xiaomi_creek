@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from sapphire device
-$(call inherit-product, device/xiaomi/sapphire/device.mk)
+# Inherit from creek device.
+$(call inherit-product, device/xiaomi/creek/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -17,14 +17,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
 
+# Device identifier
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_NAME := lineage_sapphire
-PRODUCT_DEVICE := sapphire
+PRODUCT_NAME := lineage_creek
+PRODUCT_DEVICE := creek
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 13
+PRODUCT_MODEL := Redmi 15
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Redmi/sapphiren_global/sapphire:13/TKQ1.221114.001/OS2.0.208.0.VNGMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/creek_global/creek:16/BP2A.250605.031.A3/OS3.0.302.0.WBOMIXM:user/release-keys

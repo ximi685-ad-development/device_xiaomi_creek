@@ -8,16 +8,16 @@
 include device/xiaomi/sm6225-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
-include vendor/xiaomi/sapphire/BoardConfigVendor.mk
+include vendor/xiaomi/creek/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/sapphire
+DEVICE_PATH := device/xiaomi/creek
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # Display
-TARGET_SCREEN_DENSITY := 437
+TARGET_SCREEN_DENSITY := 450
 
 # Init
-TARGET_RECOVERY_DEVICE_MODULES := init_sapphire
+TARGET_RECOVERY_DEVICE_MODULES := init_creek
 
 # Kernel prebuilt
 BOARD_USES_DT := true
@@ -40,7 +40,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/vendor_ramd
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load.recovery))
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/5.15.94) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/5.15.178) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
 

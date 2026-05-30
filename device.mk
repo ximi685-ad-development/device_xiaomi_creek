@@ -8,14 +8,14 @@
 $(call inherit-product, device/xiaomi/sm6225-common/common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/sapphire/sapphire-vendor.mk)
+$(call inherit-product, vendor/xiaomi/creek/creek-vendor.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
@@ -27,15 +27,15 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sapphire)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_creek)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResSapphire \
-    SettingsProviderResSapphire \
-    SettingsResSapphire \
-    SystemUIResSapphire \
-    WifiResSapphire
+    FrameworksResCreek \
+    SettingsProviderResCreek \
+    SettingsResCreek \
+    SystemUIResCreek \
+    WifiResCreek
 
 # Sensors
 PRODUCT_PACKAGES += \
