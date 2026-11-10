@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
     SystemUIResTopaz \
     WifiResTopaz
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_topaz)
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor
