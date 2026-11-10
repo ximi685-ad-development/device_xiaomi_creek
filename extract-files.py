@@ -33,9 +33,6 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('android.hidl.base@1.0.so')
         .add_needed('libinput_shim.so'),
 
-    'vendor/lib/hw/audio.primary.bengal.so': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
-
     'vendor/lib64/hw/audio.primary.bengal.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
 
