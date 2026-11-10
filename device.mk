@@ -52,13 +52,6 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_topaz)
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/power/config/bengal/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
