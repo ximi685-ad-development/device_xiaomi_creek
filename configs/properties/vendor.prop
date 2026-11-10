@@ -1,5 +1,7 @@
 # Fingerprint
 ro.hardware.fp.sideCap=true
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|980|115|local:4630946914797301377,1080|980|115|local:4630946444529356673
 
 # WLAN
 ro.hardware.wlan.chip=wcn3950

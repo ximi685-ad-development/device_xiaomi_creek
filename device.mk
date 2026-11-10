@@ -26,6 +26,15 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-V2-ndk.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    com.fingerprints.extension@1.0.vendor \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    libunwindstack.vendor:64
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResTopaz \
