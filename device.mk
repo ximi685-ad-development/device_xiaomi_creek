@@ -8,24 +8,18 @@
 $(call inherit-product, device/xiaomi/sm6225-common/common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/topaz/topaz-vendor.mk)
+$(call inherit-product, vendor/xiaomi/creek/creek-vendor.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/miuicamera-topaz/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-creek/device.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc) \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp_india.xml
-
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
-
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -37,20 +31,16 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureResTopaz \
-    FrameworksResTopaz \
+    ApertureResCreek \
+    FrameworksResCreek \
     NotchBarKiller \
-    SettingsProviderResTopaz \
-    SettingsResTopaz \
-    SettingsOverlayM7G \
-    SettingsOverlayM7N \
-    SettingsOverlayM7L \
-    SettingsOverlayM7IN \
-    SystemUIResTopaz \
-    WifiResTopaz
+    SettingsProviderResCreek \
+    SettingsResCreek \
+    SystemUIResCreek \
+    WifiResCreek
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_topaz)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_creek)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

@@ -8,22 +8,21 @@
 include device/xiaomi/sm6225-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
-include vendor/xiaomi/topaz/BoardConfigVendor.mk
+include vendor/xiaomi/creek/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/topaz
+DEVICE_PATH := device/xiaomi/creek
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # Display
-TARGET_SCREEN_DENSITY := 440
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+TARGET_SCREEN_DENSITY := 420
 
 # Init
-TARGET_RECOVERY_DEVICE_MODULES := init_topaz
+TARGET_RECOVERY_DEVICE_MODULES := init_creek
 
 INLINE_KERNEL_BUILDING := true
 
 # Inherit from proprietary files for miuicamera
--include device/xiaomi/miuicamera-topaz/BoardConfig.mk
+-include device/xiaomi/miuicamera-creek/BoardConfig.mk
 
 # Kernel prebuilt
 BOARD_USES_DT := true

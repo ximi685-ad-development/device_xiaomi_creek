@@ -1,32 +1,32 @@
-Copyright (C) 2023 The LineageOS Project
-
-Device configuration for Xiaomi Redmi Note 12 4G/12 4G NFC
+Device configuration for Redmi 15 4G / POCO M7 4G
 =========================================
 
-The Xiaomi Redmi Note 12 4G/12 4G NFC (codenamed _"tapas/topaz"_) is a mid-range smartphone from Xiaomi.
-
-Redmi Note 12 4G was announced and released in March 2023.
+The Redmi 15 4G / POCO M7 4G (codenamed _"creek"_) is a mid-range smartphone from Xiaomi, announced and released in August 2025.
 
 ## Device specifications
 
-| Device       | Xiaomi Redmi Note 12 4G                              |
-| -----------: | :-------------------------------------------------- |
-| SoC          | Qualcomm SM6225 Snapdragon 685 (6 nm)                      |
-| CPU          | 4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53 |
-| GPU          | Adreno 610                                          |
-| Memory       | 4GB/6GB/8GB RAM (LPDDR4X)                               |
-| Storage      | 64GB/128GB/256GB UFS 2.2 flash storage                    |
-| Shipped Android version | 13.0 with MIUI 14                        |
-| Battery      | Non-removable Li-Po 5000 mAh                        |
-| Dimensions   | 165.7 x 76 x 7.9 mm                               |
-| Display      | 1080 x 2400 pixels, 20:9 ratio 6.67" inch           |
-| Type         | AMOLED, 120Hz, 450 nits (typ), 700 nits (HBM), 1200 nits (peak)      |
-| NFC         | Yes ( Redmi Note 12 4G NFC )                            |
-| Rear camera 1 | 50 MP, f/1.8, (wide), 1/2.76", 0.64µm, PDAF     |
-| Rear camera 2 | 8 MP, f/2.2, 120˚ (ultrawide), 1/4", 1.12µm      |
-| Rear camera 3 | 2 MP, f/2.4, (macro)                               |
-| Front camera  | 13 MP, f/2.5, (wide), 1/3.0"                    |
+| Device                  | POCO M7 4G / Redmi 15 4G                            |
+| :---------------------- | :-------------------------------------------------- |
+| SoC                     | Qualcomm SM6225 Snapdragon 685 (6 nm)               |
+| CPU                     | 4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53         |
+| GPU                     | Adreno 610                                          |
+| Memory                  | 6GB/8GB RAM (LPDDR4X)                               |
+| Storage                 | 128GB/256GB UFS 2.2 (Expandable up to 2TB via SD)   |
+| Shipped Android version | 15.0 with HyperOS 2                                 |
+| Battery                 | Non-removable Silicon-Carbon 7000 mAh               |
+| Dimensions              | 169.48 x 80.45 x 8.4 mm                             |
+| Display                 | 1080 x 2340 pixels, 19.5:9 ratio 6.9" inch          |
+| Type                    | IPS LCD, 144Hz, 850 nits (HBM)                      |
+| NFC                     | Yes (Region dependent)                              |
+| Main Camera             | 50 MP f/1.8 (Wide) + Auxiliary Lens                 |
+| Front camera            | 8 MP, f/2.0 (wide)                                  |
+| Protection              | IP64 + Wet Touch 2.0                                |
+| Weight                  | 214g                                                |
+| Max Wired Input         | 33W (Turbo Charging)                                |
+| Reverse Charging        | 18W Wired (Power bank mode)                         |
+| 0-100% Time             | ~96 Minutes                                         |
+| Battery Protection      | Battery Health 4.0 / Smart Charging Engine 2.0      |
 
 ## Device picture
 
-![Xiaomi Redmi Note 12 4G](https://fdn2.gsmarena.com/vv/pics/xiaomi/redmi-note-12-4g-2.jpg "Xiaomi Redmi Note 12 4G")
+<img width="850" height="850" alt="PSX_20260724_085715 jpg" src="https://github.com/user-attachments/assets/50d0dafa-3877-42b9-a05a-dbcbb15ff8ff" />

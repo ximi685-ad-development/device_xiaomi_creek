@@ -4,39 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-from extract_utils.file import File
-from extract_utils.fixups_blob import (
-    BlobFixupCtx,
-    blob_fixup,
-    blob_fixups_user_type,
-)
-
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
 
-def blob_fixup_test_flag(
-    ctx: BlobFixupCtx,
-    file: File,
-    file_path: str,
-    *args,
-    **kargs,
-):
-    with open(file_path, 'rb+') as f:
-        f.seek(1337)
-        f.write(b'\x01')
-
-
-blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/hw/audio.primary.bengal.so': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
-}
-
 module = ExtractUtilsModule(
-    'topaz',
+    'creek',
     'xiaomi',
-    blob_fixups=blob_fixups,
     check_elf=False,
 )
 
